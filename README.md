@@ -46,7 +46,7 @@ My solutions to the JavaScript Algorithms for the Front End Development Certific
 * [ ] Arguments Optional
 
 ## Advanced Algorithms
-* [ ] Validate US Telephone Numbers
+* [x] Validate US Telephone Numbers
 * [x] Record Collection
 * [ ] Symmetric Difference
 * [ ] Exact Change

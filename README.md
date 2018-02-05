@@ -41,7 +41,7 @@ My solutions to the JavaScript Algorithms for the Front End Development Certific
 * [x] Finders Keepers
 * [x] Drop it
 * [x] Steamroller
-* [ ] Binary Agents
+* [x] Binary Agents
 * [x] Everything Be True
 * [ ] Arguments Optional
 

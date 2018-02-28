@@ -37,7 +37,7 @@ My solutions to the JavaScript Algorithms for the Front End Development Certific
 * [x] Spinal Tap Case
 * [x] Sum All Odd Fibonacci Numbers
 * [x] Sum All Primes
-* [ ] Smallest Common Multiple
+* [x] Smallest Common Multiple
 * [x] Finders Keepers
 * [x] Drop it
 * [x] Steamroller

@@ -5,11 +5,13 @@ Write a function that splits an array (first argument) into groups the length of
 */
 
 function chunkArrayInGroups(arr, size) {
-  var group = [], i;
+  var i,
+  group = [];
+
   for (i = 0; i < arr.length; i += size) {
     group.push(arr.slice(i, i + size));
   }
   return group;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);

@@ -14,11 +14,11 @@ NOTE: Preserve the case of the original word when you are replacing it. For exam
 
 function myReplace(str, before, after) {
 
-  if (before.charAt(0) == before.charAt(0).toUpperCase()) {
+  if (before.charAt(0) === before.charAt(0).toUpperCase()) {
     after = after.charAt(0).toUpperCase() + after.slice(1);
     // this makes the first letter of the after argument uppercase
   }
-  else if (before.charAt(0) == before.charAt(0).toLowerCase()) {
+  else if (before.charAt(0) === before.charAt(0).toLowerCase()) {
     after = after.charAt(0).toLowerCase() + after.slice(1);
     // this makes the first letter of the after argument lowercase
     // this isn't technically necessary to pass the challenge but it more accurately abides by the requirement to preserve the casing of the before argument
@@ -27,4 +27,4 @@ function myReplace(str, before, after) {
   return str.replace(before, after);
 }
 
-myReplace("Let us go to the store", "store", "mall");
+myReplace('Let us go to the store', 'store', 'mall');

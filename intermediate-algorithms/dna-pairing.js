@@ -13,10 +13,11 @@ The character and its pair are paired up in an array, and all the arrays are gro
 */
 
 function pairElement(str) {
-
   str = str.split('');
 
-  for (var i = 0; i < str.length; i++) {
+  var i;
+
+  for (i = 0; i < str.length; i++) {
 
     switch (str[i]) {
       case 'A':
@@ -32,11 +33,9 @@ function pairElement(str) {
         str[i] += 'C';
         break;
     }
-
     str[i] = str[i].split('');
   }
-
   return str;
 }
 
-pairElement("GCG");
+pairElement('GCG');

@@ -7,8 +7,8 @@ All roman numerals answers should be provided in upper-case.
 */
 
 function convertToRoman(num) {
-
-  var result = '';
+  var i,
+  result = '';
   var obj = {
     M: 1000,
     CM: 900,
@@ -25,13 +25,13 @@ function convertToRoman(num) {
     I: 1
   };
 
-  for (var i in obj) {
+  for (i in obj) {
+
     while (num >= obj[i]) {
       result += i;
       num -= obj[i];
     }
   }
-
   return result;
 }
 

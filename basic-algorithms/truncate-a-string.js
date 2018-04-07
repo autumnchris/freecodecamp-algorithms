@@ -9,6 +9,7 @@ However, if the given maximum string length num is less than or equal to 3, then
 */
 
 function truncateString(str, num) {
+
    if (str.length > num && num > 3) {
     return str.slice(0, num - 3) + '...';
   }
@@ -20,4 +21,4 @@ function truncateString(str, num) {
   }
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 11);
+truncateString('A-tisket a-tasket A green and yellow basket', 11);

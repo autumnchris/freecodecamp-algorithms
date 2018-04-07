@@ -7,12 +7,16 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 */
 
 function largestOfFour(arr) {
+  var i,
+  j,
+  largestNumsArray = [],
+  maxNum;
 
-  var largestNumsArray = [];
+  for(i = 0; i < arr.length; i++) {
+    maxNum = -Infinity;
 
-  for(var i = 0; i < arr.length; i++) {
-    var maxNum = -Infinity;
-    for(var j = 0; j < arr[i].length; j++) {
+    for (j = 0; j < arr[i].length; j++) {
+
       if (arr[i][j] > maxNum) {
         maxNum = arr[i][j];
       }

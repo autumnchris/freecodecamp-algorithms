@@ -13,7 +13,7 @@ function palindrome(str) {
   str = str.toLowerCase().replace(/[\s\W_]/g, '');
   var newString = str.split('').reverse().join('');
 
-  if(str == newString) {
+  if (str === newString) {
     return true;
   }
   else {
@@ -21,4 +21,4 @@ function palindrome(str) {
   }
 }
 
-palindrome("eye");
+palindrome('eye');

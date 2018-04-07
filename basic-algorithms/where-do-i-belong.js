@@ -9,13 +9,17 @@ Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has
 */
 
 function getIndexToIns(arr, num) {
+  var i,
+  final;
+
   arr.push(num);
   arr.sort(function(a, b) {
     return a - b;
   });
 
-  for (var i = 0; i < arr.length; i++) {
-    var final = arr[i];
+  for (i = 0; i < arr.length; i++) {
+    final = arr[i];
+    
     if (arr[i] >= num) {
       return arr.indexOf(final);
     }

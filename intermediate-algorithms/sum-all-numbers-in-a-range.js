@@ -7,17 +7,16 @@ The lowest number will not always come first.
 */
 
 function sumAll(arr) {
-
   arr.sort();
 
-  var min = Math.min.apply(null, arr);
-  var max = Math.max.apply(null, arr);
+  var i,
+  min = Math.min.apply(null, arr),
+  max = Math.max.apply(null, arr),
+  range = 0;
 
-  var range = 0;
-    for (var i = min; i <= max; i++){
+    for (i = min; i <= max; i++){
       range += i;
     }
-
   return range;
 }
 

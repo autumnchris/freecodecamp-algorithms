@@ -5,13 +5,17 @@ You will be provided with an initial array (the first argument in the destroyer 
 */
 
 function destroyer(arr) {
-  
-  var args = Array.prototype.slice.call(arguments);
+  var i,
+  j,
+  args = Array.prototype.slice.call(arguments);
+
   args.splice(0,1);
 
-  for(var i = 0; i < arr.length; i++) {
-    for(var j = 0; j < args.length; j++) {
-      if (arr[i] == args[j]) {
+  for (i = 0; i < arr.length; i++) {
+
+    for (j = 0; j < args.length; j++) {
+
+      if (arr[i] === args[j]) {
         delete arr[i];
       }
     }
@@ -20,7 +24,6 @@ function destroyer(arr) {
   function removeFalse(value) {
     return Boolean(value);
   }
-
   return arr.filter(removeFalse);
 }
 

@@ -9,7 +9,7 @@ This challenge can be solved with the .endsWith() method, which was introduced i
 function confirmEnding(str, target) {
   var lastChars = str.length - target.length;
 
-  if ( str.substr(lastChars, str.length) == target) {
+  if (str.substr(lastChars, str.length) === target) {
     return true;
   }
   else {
@@ -17,4 +17,4 @@ function confirmEnding(str, target) {
   }
 }
 
-confirmEnding("Bastian", "n");
+confirmEnding('Bastian', 'n');

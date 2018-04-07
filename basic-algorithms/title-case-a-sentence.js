@@ -7,12 +7,15 @@ For the purpose of this exercise, you should also capitalize connecting words li
 */
 
 function titleCase(str) {
-  var myArray = str.toLowerCase().split(' ');
-  for(var i = 0; i < myArray.length; i++) {
-    var ch = myArray[i].charAt(0);
+  var i,
+  ch,
+  myArray = str.toLowerCase().split(' ');
+
+  for (i = 0; i < myArray.length; i++) {
+    ch = myArray[i].charAt(0);
     myArray[i] = myArray[i].replace(ch, ch.toUpperCase());
   }
   return myArray.join(' ');
 }
 
-titleCase("I'm a little tea pot");
+titleCase('I\'m a little tea pot');

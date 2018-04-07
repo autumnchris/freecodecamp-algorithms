@@ -16,10 +16,8 @@ For this challenge you will be presented with a string such as 800-692-7753 or 8
 */
 
 function telephoneCheck(str) {
-
   var validNumber = /^1?\s?(\d{3}|\(\d{3}\))[-\s]?\d{3}[-\s]?\d{4}$/;
-
   return validNumber.test(str);
 }
 
-telephoneCheck("555-555-5555");
+telephoneCheck('555-555-5555');

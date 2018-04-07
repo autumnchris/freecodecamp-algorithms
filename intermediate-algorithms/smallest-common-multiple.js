@@ -9,17 +9,23 @@ e.g. for 1 and 3 - find the smallest common multiple of both 1 and 3 that is eve
 */
 
 function smallestCommons(arr) {
-  arr.sort();
-  var range = [];
+  var i,
+  j,
+  range = [],
+  a,
+  b,
+  c;
 
-  for (var i = arr[0]; i <= arr[1]; i++) {
+  arr.sort();
+
+  for (i = arr[0]; i <= arr[1]; i++) {
     range.push(i);
   }
-  var a = range[0];
+  a = range[0];
 
-  for (var j = 1; j < range.length; j++) {
-    var b = range[j];
-    var c = a;
+  for (i = 1; i < range.length; i++) {
+    b = range[i];
+    c = a;
 
     while (a && b) {
 
@@ -30,7 +36,7 @@ function smallestCommons(arr) {
         b %= a;
       }
     }
-    a = c * range[j] / (a + b);
+    a = c * range[i] / (a + b);
   }
 
   return a;

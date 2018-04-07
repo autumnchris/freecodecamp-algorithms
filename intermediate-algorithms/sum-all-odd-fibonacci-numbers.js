@@ -9,15 +9,15 @@ For example, sumFibs(10) should return 10 because all odd Fibonacci numbers less
 */
 
 function sumFibs(num) {
+  var i,
+  arr = [1, 1],
+  previousNum = arr[0],
+  currentNum = arr[1],
+  sum = 0,
+  newCurrentNum;
 
-  var arr = [1, 1];
-  var previousNum = arr[0];
-  var currentNum = arr[1];
-  var sum = 0;
-
-  for (var i = 0; i < arr.length; i++) {
-
-    var newCurrentNum = previousNum + currentNum;
+  for (i = 0; i < arr.length; i++) {
+    newCurrentNum = previousNum + currentNum;
 
     if (newCurrentNum <= num) {
       arr.push(newCurrentNum);
@@ -29,7 +29,6 @@ function sumFibs(num) {
       sum += arr[i];
     }
   }
-
   return sum;
 }
 

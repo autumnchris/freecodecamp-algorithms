@@ -9,13 +9,15 @@ The provided number may not be a prime.
 */
 
 function sumPrimes(num) {
+  var i,
+  j,
+  sum = 0,
+  isPrime;
 
-  var sum = 0;
+  for (i = 2; i <= num; i++) {
+    isPrime = true;
 
-  for (var i = 2; i <= num; i++) {
-
-    var isPrime = true;
-    for (var j = 2; j <= i; j++) {
+    for (j = 2; j <= i; j++) {
 
       if (i % j === 0 && i !== j) {
         isPrime = false;
@@ -26,7 +28,6 @@ function sumPrimes(num) {
       sum += i;
     }
   }
-
   return sum;
 }
 

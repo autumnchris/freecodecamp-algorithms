@@ -5,15 +5,13 @@ Compare two arrays and return a new array with any items only found in one of th
 */
 
 function diffArray(arr1, arr2) {
-
   var newArr = arr1.concat(arr2);
 
   function filteredArray(char) {
-    if (arr1.indexOf(char) == -1 || arr2.indexOf(char) == -1) {
+    if (arr1.indexOf(char) === -1 || arr2.indexOf(char) === -1) {
       return char;
     }
   }
-
   return newArr.filter(filteredArray);
 }
 

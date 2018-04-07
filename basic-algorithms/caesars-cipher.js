@@ -11,13 +11,16 @@ All letters will be uppercase. Do not transform any non-alphabetic character (i.
 */
 
 function rot13(str) {
+  var i,
+  cipher = '';
 
-  var cipher = '';
-  for (var i = 0; i < str.length; i++) {
-    if(str[i].charCodeAt() < 65 || str[i].charCodeAt() > 90) {
+  for (i = 0; i < str.length; i++) {
+
+    if (str[i].charCodeAt() < 65 || str[i].charCodeAt() > 90) {
       cipher += str[i];
     }
     else {
+
       if (str[i].charCodeAt() > 77) {
         cipher += String.fromCharCode(str[i].charCodeAt() - 13);
       }
@@ -26,8 +29,7 @@ function rot13(str) {
       }
     }
   }
-
   return cipher;
 }
 
-rot13("SERR PBQR PNZC");
+rot13('SERR PBQR PNZC');

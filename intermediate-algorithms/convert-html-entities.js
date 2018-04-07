@@ -5,7 +5,6 @@ Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a strin
 */
 
 function convertHTML(str) {
-
 	var htmlEntities = {
 		'&': '&amp;',
 		'<': '&lt;',
@@ -17,8 +16,7 @@ function convertHTML(str) {
 	str = str.split('').map(function(char) {
 		return htmlEntities[char] || char;
 	});
-
   return str.join('');
 }
 
-convertHTML("Dolce & Gabbana");
+convertHTML('Dolce & Gabbana');

@@ -5,6 +5,7 @@ Repeat a given string (first argument) num times (second argument). Return an em
 */
 
 function repeatStringNumTimes(str, num) {
+
   if (num < 0) {
     return '';
   }
@@ -13,4 +14,4 @@ function repeatStringNumTimes(str, num) {
   }
 }
 
-repeatStringNumTimes("abc", 3);
+repeatStringNumTimes('abc', 3);

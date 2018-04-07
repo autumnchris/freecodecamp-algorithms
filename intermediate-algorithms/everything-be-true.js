@@ -7,10 +7,10 @@ Remember, you can access object properties through either dot notation or [] not
 */
 
 function truthCheck(collection, pre) {
+  var i,
+  arrCount = 0;
 
-  var arrCount = 0;
-
-  for (var i in collection) {
+  for (i in collection) {
 
     if (collection[i].hasOwnProperty(pre) && Boolean(collection[i][pre])) {
       arrCount++;
@@ -24,4 +24,4 @@ function truthCheck(collection, pre) {
     return false;
   }
 }
-truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+truthCheck([{'user': 'Tinky-Winky', 'sex': 'male'}, {'user': 'Dipsy', 'sex': 'male'}, {'user': 'Laa-Laa', 'sex': 'female'}, {'user': 'Po', 'sex': 'female'}], 'sex');

@@ -11,13 +11,14 @@ Lastly, ["Alien", "line"] should return true because all of the letters in "line
 */
 
 function mutation(arr) {
+  var final,
+  i,
+  str1 = arr[0].toLowerCase(),
+  str2 = arr[1].toLowerCase();
 
-  var str1 = arr[0].toLowerCase();
-  var str2 = arr[1].toLowerCase();
-  var final;
+  for (i = 0; i < str2.length; i++) {
 
-  for(var i = 0; i < str2.length; i++) {
-    if(str1.indexOf(str2[i]) === -1) {
+    if (str1.indexOf(str2[i]) === -1) {
       return false;
     }
     else {
@@ -27,4 +28,4 @@ function mutation(arr) {
   return final;
 }
 
-mutation(["hello", "Hello"]);
+mutation(['hello', 'Hello']);

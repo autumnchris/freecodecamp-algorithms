@@ -9,8 +9,9 @@ For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { f
 function whatIsInAName(collection, source) {
 
   var arr = collection.filter(function(items) {
+    var i;
 
-  	for (var i in source) {
+  	for (i in source) {
 
   		if (source[i] !== items[i]) {
   			return false;
@@ -22,4 +23,4 @@ function whatIsInAName(collection, source) {
   return arr;
 }
 
-whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+whatIsInAName([{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }], { last: 'Capulet' });

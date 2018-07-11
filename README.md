@@ -43,7 +43,7 @@ My solutions to the JavaScript algorithms on [Free Code Camp](https://www.freeco
 * [x] Everything Be True
 * [x] Arguments Optional
 * [x] Make a Person
-* [ ] Map the Debris
+* [x] Map the Debris
 
 ## JavaScript Algorithms and Data Structures Projects
 * [x] Palindrome Checker

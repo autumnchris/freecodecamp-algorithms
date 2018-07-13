@@ -50,7 +50,7 @@ My solutions to the JavaScript algorithms on [Free Code Camp](https://www.freeco
 * [x] Roman Numeral Converter
 * [x] Caesars Cipher
 * [x] Telephone Number Validator
-* [ ] Cash Register
+* [x] Cash Register
 
 ## Coding Interview Algorithms
 * [ ] Find the Symmetric Difference

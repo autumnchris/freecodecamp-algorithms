@@ -18,7 +18,7 @@ function mutation(arr) {
 
   for (i = 0; i < str2.length; i++) {
 
-    if (str1.indexOf(str2[i]) === -1) {
+    if (str1.indexOf(str2.charAt(i)) === -1) {
       result = false;
     }
   }

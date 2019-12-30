@@ -8,7 +8,8 @@ This challenge can be solved with the .endsWith() method, which was introduced i
 
 function confirmEnding(str, target) {
 
-  if (str.substr(str.length - target.length, target.length) === target) {
+  if (str.substr(str.length - target.length) === target) {
+  // .slice() can be alternatively used
     return true;
   }
   else {

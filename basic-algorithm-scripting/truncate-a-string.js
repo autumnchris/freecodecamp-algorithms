@@ -7,8 +7,8 @@ Truncate a string (first argument) if it is longer than the given maximum string
 function truncateString(str, num) {
 
   if (str.length > num) {
-    str = str.substr(0, num);
-    str += '...';
+    str = `${str.slice(0, num)}...`;
+    // .substr() can be alternatively used
   }
   return str;
 }

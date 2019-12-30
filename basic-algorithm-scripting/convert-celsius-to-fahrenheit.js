@@ -7,7 +7,7 @@ You are given a variable celsius representing a temperature in Celsius. Use the 
 */
 
 function convertToF(celsius) {
-  let fahrenheit = celsius * 9/5 + 32;
+  let fahrenheit = celsius * (9/5) + 32;
   return fahrenheit;
 }
 

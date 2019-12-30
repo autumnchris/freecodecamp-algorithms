@@ -6,14 +6,25 @@ Return the provided string with the first letter of each word capitalized. Make 
 For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
 */
 
+// Solved by using the .map() method
+
 function titleCase(str) {
-  let arr = str.toLowerCase().split(' ');
+  const arr = str.toLowerCase().split(' ');
+  return arr.map(word => {
+    return word.replace(word.charAt(0), word.charAt(0).toUpperCase());
+  }).join(' ');
+}
+
+titleCase('I\'m a little tea pot');
+
+// Solved by using a for loop
+
+function titleCase(str) {
+  const arr = str.toLowerCase().split(' ');
   let i;
-  let firstChar;
 
   for (i = 0; i < arr.length; i++) {
-    firstChar = arr[i].charAt(0);
-    arr[i] = arr[i].replace(firstChar, firstChar.toUpperCase());
+    arr[i] = arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase());
   }
   return arr.join(' ');
 }

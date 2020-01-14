@@ -1,6 +1,6 @@
-# Free Code Camp Algorithms
+# freeCodeCamp Algorithms
 
-My solutions to the JavaScript algorithms on [Free Code Camp](https://www.freecodecamp.org).
+My solutions to the JavaScript algorithms on [freeCodeCamp](https://www.freecodecamp.org).
 
 ---
 

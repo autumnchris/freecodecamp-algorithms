@@ -4,7 +4,7 @@ My solutions to the JavaScript algorithms on [freeCodeCamp](https://www.freecode
 
 ---
 
-## Basic Algorithm Scripting
+## [Basic Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-algorithm-scripting)
 * [x] Convert Celsius to Fahrenheit
 * [x] Reverse a String
 * [x] Factorialize a Number
@@ -22,7 +22,7 @@ My solutions to the JavaScript algorithms on [freeCodeCamp](https://www.freecode
 * [x] Mutations
 * [x] Chunky Monkey
 
-## Intermediate Algorithm Scripting
+## [Intermediate Algorithm Scripting](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#intermediate-algorithm-scripting)
 * [x] Sum All Numbers in a Range
 * [x] Diff Two Arrays
 * [x] Seek and Destroy
@@ -45,14 +45,14 @@ My solutions to the JavaScript algorithms on [freeCodeCamp](https://www.freecode
 * [x] Make a Person
 * [x] Map the Debris
 
-## JavaScript Algorithms and Data Structures Projects
+## [JavaScript Algorithms and Data Structures Projects](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#javascript-algorithms-and-data-structures-projects)
 * [x] Palindrome Checker
 * [x] Roman Numeral Converter
 * [x] Caesars Cipher
 * [x] Telephone Number Validator
 * [x] Cash Register
 
-## Coding Interview Algorithms
+## [Coding Interview Prep Algorithms](https://www.freecodecamp.org/learn/coding-interview-prep/#algorithms)
 * [ ] Find the Symmetric Difference
 * [ ] Inventory Update
 * [ ] No Repeats Please

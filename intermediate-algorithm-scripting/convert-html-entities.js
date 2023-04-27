@@ -19,4 +19,4 @@ function convertHTML(str) {
   return str.join('');
 }
 
-convertHTML("Dolce & Gabbana");
+convertHTML('Dolce & Gabbana');
